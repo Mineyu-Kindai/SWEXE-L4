@@ -1,0 +1,9 @@
+<h1>アカウント登録</h1>
+
+<%= form_with model: @user, url: top_create_path, local: true do |form| %>
+  <%= form.label :uid, "ユーザーID" %>
+  <%= form.text_field :uid %>
+  <%= form.label :pass, "パスワード" %>
+  <%= form.password_field :pass %>
+  <%= form.submit "登録" %>
+<% end %>
